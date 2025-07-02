@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://d2crpa3pfw74n"]
+
+[ext_resource type="Texture2D" uid="uid://6a86k2pfg1t6" path="res://gem.png" id="1_rd2yi"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lquwl"]
+size = Vector2(22.6667, 25.4167)
+
+[node name="Collectible" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(527, 159.333)
+scale = Vector2(0.0592217, 0.0645425)
+texture = ExtResource("1_rd2yi")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(527.333, 159.625)
+shape = SubResource("RectangleShape2D_lquwl")
