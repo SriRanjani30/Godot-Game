@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://bochfjwqtqroj"]
+
+[ext_resource type="Script" uid="uid://dq62xa84vq0wn" path="res://enemy.gd" id="1_2hac7"]
+[ext_resource type="Texture2D" uid="uid://cfafrwdgv5jdo" path="res://Enemy_Alien.png" id="2_2hac7"]
+[ext_resource type="PackedScene" uid="uid://4cefy2ulnrgd" path="res://AttackArea.tscn" id="2_s7bn3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4c57u"]
+size = Vector2(104, 117)
+
+[node name="Enemy" type="CharacterBody2D"]
+script = ExtResource("1_2hac7")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.0933333, 0.0897651)
+texture = ExtResource("2_2hac7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, 0)
+shape = SubResource("RectangleShape2D_4c57u")
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="AttackArea" parent="." instance=ExtResource("2_s7bn3")]
+position = Vector2(11, -36)
+
+[connection signal="body_entered" from="AttackArea" to="." method="_on_attack_area_body_entered"]

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="512" viewBox="0 0 64 128">
+  <!-- Helmet -->
+  <circle cx="32" cy="20" r="12" fill="#b0bec5" stroke="#333" stroke-width="1.5"></circle>
+  <!-- Visor -->
+  <ellipse cx="32" cy="20" rx="8" ry="10" fill="#cfd8dc" stroke="#333" stroke-width="1"></ellipse>
+  <!-- Face inside helmet -->
+  <circle cx="32" cy="20" r="6" fill="#e3b07a"></circle>
+  <!-- Eyes -->
+  <circle cx="30" cy="19" r="0.8" fill="#333"></circle>
+  <circle cx="34" cy="19" r="0.8" fill="#333"></circle>
+  <!-- Mouth -->
+  <path d="M30,22 Q32,23.5 34,22" stroke="#7b2d14" stroke-width="0.8" fill="none"></path>
+  
+  <!-- Space suit torso -->
+  <rect x="22" y="32" width="20" height="28" rx="4" fill="#eceff1" stroke="#333" stroke-width="1.5"></rect>
+  <!-- Control panel on chest -->
+  <rect x="27" y="40" width="10" height="6" fill="#90a4ae" stroke="#333" stroke-width="1"></rect>
+  
+  <!-- Arms with gloves -->
+  <path d="M22,34 Q12,48 12,65" stroke="#eceff1" stroke-width="4" fill="none"></path>
+  <path d="M42,34 Q52,48 52,65" stroke="#eceff1" stroke-width="4" fill="none"></path>
+  <!-- Gloves -->
+  <circle cx="12" cy="65" r="3" fill="#455a64"></circle>
+  <circle cx="52" cy="65" r="3" fill="#455a64"></circle>
+  
+  <!-- Backpack tank -->
+  <rect x="16" y="32" width="32" height="38" rx="4" fill="#b0bec5" opacity="0.4"></rect>
+  
+  <!-- Legs with boots -->
+  <path d="M26,60 L26,110" stroke="#eceff1" stroke-width="4"></path>
+  <path d="M38,60 L38,110" stroke="#eceff1" stroke-width="4"></path>
+  <!-- Boots -->
+  <rect x="22" y="108" width="8" height="6" fill="#455a64"></rect>
+  <rect x="34" y="108" width="8" height="6" fill="#455a64"></rect>
+</svg>
